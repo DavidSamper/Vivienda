@@ -6,7 +6,7 @@
 
 /**
  *
- * @author Paqui Elena
+ * @author Paqui Elena y David Samper
  */
 public class Vivienda 
 {
@@ -94,17 +94,19 @@ public class Vivienda
     public void setPropietario(String propietario) {
         this.propietario = propietario;
     }
+    /** atributos*/
     private double precio;
     private int numHabitaciones;
     private double superficie;
     private boolean parking;
     private String estado;
     private String propietario;
-    
+    /** constructor*/
     public Vivienda (double precio)
     {
         this.precio = precio;
     }
+    /** nuevo constructor*/
     public Vivienda (double precio,int numHabitaciones,double superficie,boolean parking,String estado,String propietario)
     {
         this.precio = precio;
@@ -114,6 +116,7 @@ public class Vivienda
         this.estado = estado;
         this.propietario=propietario;
     }
+    /** metodo modificado con una constante*/
     public void actualizarPrecio()
     {
         setPrecio(getPrecio() - getPrecio() * Descuento);
