@@ -101,12 +101,19 @@ public class Vivienda
     private boolean parking;
     private String estado;
     private String propietario;
-    /** constructor*/
+    /** constructo
+     * @param precior*/
     public Vivienda (double precio)
     {
         this.precio = precio;
     }
-    /** nuevo constructor*/
+    /** nuevo constructo
+     * @param precio
+     * @param superficier
+     * @param numHabitaciones
+     * @param parking
+     * @param estado
+     * @param propietario*/
     public Vivienda (double precio,int numHabitaciones,double superficie,boolean parking,String estado,String propietario)
     {
         this.precio = precio;
@@ -121,5 +128,9 @@ public class Vivienda
     {
         setPrecio(getPrecio() - getPrecio() * Descuento);
     }
+
+    /**
+     devuelve el valor de la constante del descuento
+     */
     public static final double Descuento = 0.05;
 }
